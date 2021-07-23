@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+{% block content %}
+    <!-- Page Loader Start -->
+    {% include 'includes/page_loder.html' %}
+
+    <!-- Background Circles Start -->
+    {% include 'includes/background_circles.html' %}
+
+    <!-- Overlay Start -->
+    {% include 'includes/overlay.html' %}
+
+    <!-- Main Start -->
+    <div class="main hidden">
+
+        <!-- Header Start -->
+        {% include 'includes/main/header.html' %}
+
+        <!-- Home Section Start -->
+        {% include 'includes/main/home_section.html' %}
+
+        <!-- About Section Start -->
+        {% include 'includes/main/about_section.html' %}
+
+        <!-- Portfolio Section Start -->
+        {% include 'includes/main/portfolio_section.html' %}
+
+        <!-- Contact Section Start -->
+        {% include 'includes/main/contact.html' %}
+
+    </div>
+
+    <!-- Portfolio Item Details Popup Start -->
+    {% include 'includes/portfolio_item_details_popup.html' %}
+
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static '\js\script.js' %}"></script>
+{% endblock scripts %}

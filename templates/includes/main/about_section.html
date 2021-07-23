@@ -1,0 +1,91 @@
+{% load static %}
+<section class="about-section sec-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>about me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-img">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="about img">
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="para">Hi, I am an Enginner, a Data Scientist, an AI Engineer and a Full Stack Developer. I Born and raised in Kota, Rajasthan and i am the Founder of ProEcart Pvt Ltd and Guiding Online. I started to learn Coding Languages in Early 2012.</p>
+          <h3>skills</h3>
+          <div class="skills">
+            <div class="skill-item">html</div>
+            <div class="skill-item">css</div>
+            <div class="skill-item">javascript</div>
+            <div class="skill-item">bootstrap</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Django</div>
+            <div class="skill-item">R programming</div>
+            <div class="skill-item">Machine Learning</div>
+            <div class="skill-item">Big Data & Spark</div>
+            <div class="skill-item">Deep Learning</div>
+            <div class="skill-item">Natural Language Processing</div>
+            <div class="skill-item">Tableau and Power BI</div>
+          </div>
+
+          <div class="about-tabs">
+            <button type="button" class="tab-item active" data-target="#education">education</button>
+            <button type="button" class="tab-item" data-target="#experience">experience</button>
+          </div>
+
+          <!-- Education Start -->
+          <div class="tab-content active" id="education">
+             <div class="timeline">
+               <div class="timeline-item">
+                 <span class="date">2010 - 2014</span>
+                 <h4>Bachelor of Technology - <span>Rajasthan Technical University</span></h4>
+                 <p class="para">I holds a degree in Electronics and Communications Engineering from GCET, Bikaner Affiliated to Rajasthan Technical University.</p>
+               </div>
+               <div class="timeline-item">
+                <span class="date">2015 - 2017</span>
+                <h4>MBA - <span>Amity University</span></h4>
+                <p class="para">I holds a Master degree in Marketing and Finance from Amity University, Jaipur.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2016 - 2019</span>
+                <h4>Data Scientist, AI Engineer - <span>Simplilearn</span></h4>
+                <p class="para">I holds Diplomas in Data Science, AI Engineering and Automation Engineering as well.</p>
+              </div>
+             </div>
+          </div>
+          <!-- Education End -->
+
+          <!-- Experience Start -->
+          <div class="tab-content" id="experience">
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="date">2014 - 2018</span>
+                <h4>Senior Executive - <span>Allen Career Institute</span></h4>
+                <p class="para"> Work in a Sales Executive position and work with the internal team, Marketing staff to increase sales opportunities and maximize revenue for the organization.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2018 - 2019</span>
+                <h4>Senior Manager - <span>Bansal Classes Pvt Ltd</span></h4>
+                <p class="para">Work in a senior sales position and work with the internal team, Marketing staff to increase sales opportunities and maximize revenue for the organization.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2012 - Present</span>
+                <h4>Full Stack Developer - <span>Freelancer</span></h4>
+                <p class="para">First Fell in love with web design and development in 2012. since then i have been hooked. Although my focus for now in both frontend and backend Web and spp development. My favorite development stack at the moment are Python, Django, Node, SQL.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="date">2018 - Present</span>
+                <h4>Data Scientist & AI Engineer - <span>Freelancer</span></h4>
+                <p class="para">I have extensive knowledge of statistical models and have developed verious anylysis strategies for different studies and meta-analysis and in Machine Learning Models.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Experience End -->
+          <a href="{% static 'cv.pdf' %}" target="_blank" class="btn">download cv</a>
+          <a href="#contact" class="btn link-item">contact me</a>
+        </div>
+      </div>
+    </div>
+  </section>
