@@ -15,7 +15,7 @@ def homeView(request):
         ct.save()
 
         email_to_user = EmailMessage(Subject, Message, settings.EMAIL_HOST_USER, [Email,])
-        email_to_admin = EmailMessage("Thank you for contact me", "enter your thank you message here", Email, [settings.EMAIL_HOST_USER,])
+        email_to_admin = EmailMessage("I appreciate you contacting me. I or one of my colleagues will get back in touch with you soon!, Thnak you and Have a great day!", Email, [settings.EMAIL_HOST_USER,])
         email_to_user.send(fail_silently=True)
         email_to_admin.send(fail_silently=True)
         return redirect("home")
